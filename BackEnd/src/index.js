@@ -28,7 +28,7 @@ mongoose.connection.on('connected', () => {
 }) 
 
 //What happens when connection to Mongo is not successfull
-mongoose.connection.on('erroe', (err) => {
+mongoose.connection.on('error', (err) => {
     console.error('Error connecting to mongo', err);
 })
 
